@@ -219,3 +219,167 @@ header {
   color: #0e76a8;
   transition: color 0.5s;
 }
+
+.conhecimentos {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(6, 6rem);
+  row-gap: .5rem;
+}
+
+.conhecimento:nth-child(1) {
+  grid-column: 4 / 7;
+  grid-row: 1 / 3;
+}
+
+.fa-html5 {
+  color: #f06529;
+}
+
+.conhecimento:nth-child(2) {
+  grid-column: 3 / 6;
+  grid-row: 3 / 5;
+}
+
+.fa-css3-alt {
+  color: #2965f1;
+}
+
+.conhecimento:nth-child(3) {
+  grid-column: 4 / 7;
+  grid-row: 5 / -1;
+}
+
+.fa-pencil-alt {
+  color: #42055a;
+}
+
+.conhecimento:nth-child(4) {
+  grid-column: 11 / 14;
+  grid-row: 1 / 3;
+}
+
+.fa-js {
+  color: #f0db4f;
+}
+
+.conhecimento:nth-child(5) {
+  grid-column: 12 / 15;
+  grid-row: 3 / 5;
+}
+
+.fa-bootstrap {
+  color: #563d7c;
+}
+
+.conhecimento:nth-child(6) {
+  grid-column: 11 / 14;
+  grid-row: 5 / -1;
+}
+
+.fa-github {
+  color: #000;
+}
+
+.sessao-conhecimentos {
+  background-color: #f5f5f5;
+}
+
+.sessao-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sessao-header h1 {
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  color: #4b4b4b;
+  border-bottom: solid 3px #6a3093;
+  margin-bottom: 1.5rem;
+}
+
+.conhecimento-header {
+  display: flex;
+  align-items: center;
+  color: #4b4b4b
+}
+
+.conhecimento-header i{
+  font-size: 2.5rem;
+}
+
+.conhecimento-header h3 {
+  font-family: var(--font-secundary);
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.conhecimento-text {
+  font-family: var(--font-secundary);
+  margin-top: .3rem;
+  font-size: 1.2rem;
+}
+
+.conhecimento-img-wrapper {
+  grid-column: 7 / 11;
+  grid-row: 2 / 6;
+  width: 100%;
+}
+
+.conhecimento-img-wrapper img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.projetos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 20rem;
+  height: 25rem;
+}
+
+.card-img-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  border-radius: .5rem;
+}
+
+.card-img-wrapper img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+  opacity: .8;
+}
+
+.card-info {
+  position: absolute;
+  bottom: -79rem; 
+  padding: .5rem;
+  text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 4);
+}
+
+.card-info h2 {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: 500;
+  color: #eee;
+}
+
+.card-info h3 {
+  font-family: var(--font-secundary);
+  font-weight: bolder;
+  color: #ff4081;
+}
+
+.card-info p {
+  font-family: var(--font-secundary);
+  color: #eee;
+  font-weight: 500;
+  
+}
